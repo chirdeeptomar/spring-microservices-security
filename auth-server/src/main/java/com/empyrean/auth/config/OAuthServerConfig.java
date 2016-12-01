@@ -43,12 +43,12 @@ public class OAuthServerConfig extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("phoenix-api-client")
+                .withClient("api-client")
                 .secret("verysecretivesecret")
                 .scopes("READ", "WRITE", "DELETE")
                 .authorizedGrantTypes("implicit", "refresh_tokens", "password", "authorization_code")
                 .and()
-                .withClient("phoenix-mobile-client")
+                .withClient("mobile-client")
                 .secret("verysecretivesecret")
                 .scopes("READ")
                 .authorizedGrantTypes("implicit", "refresh_tokens", "password", "authorization_code");

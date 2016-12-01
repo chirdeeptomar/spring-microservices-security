@@ -12,5 +12,5 @@ security:
       user-info-uri: http://localhost:9090/uua/user
       token-info-uri: http://localhost:9090/uua/oauth/token
     client:
-      client-id: phoenix-mobile-client
+      client-id: mobile-client
       client-secret: verysecretivesecret
